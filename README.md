@@ -9,7 +9,14 @@ This is primarily a convenience wrapper around the [just_audio](https://pub.dev/
 
 ## Installation
 
-@todo add pubspec.yaml example for github
+Add the 'sounds' package to your `pubspec.yaml` file:
+
+```
+dependencies:
+  sounds:
+    git:
+      url: git@github.com:kpander/flutter-sounds.git
+```
 
 
 ## Usage examples
