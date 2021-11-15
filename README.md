@@ -21,6 +21,10 @@ dependencies:
 
 ## Usage examples
 
+```
+import 'package:sounds/sounds.dart';
+```
+
 Play a single sound `effect.mp3` which is located at `./assets/effect.mp3`.
 
 ```

@@ -1,33 +1,3 @@
-/*
-  // FINAL API FROM HERE DOWN
-
-  sounds = Sounds();
-  sounds.isMuted = false; // default
-  sounds.isMuted = true;
-
-  sounds.setVolume(1.0); // set volume for all existing channels
-  sounds.setVolume(1.0, key: "abc"); set volume for channel id "abc"
-
-  String key = sounds.play("file.mp3"); // play file, get the key for it
-  await sounds.play("file.mp3", key: "abc"); // play file, use channel "abc"
-
-  String key = sounds.play("file.mp3", volume: -1.0); // play file, use current vol for that channel
-  String key = sounds.play("file.mp3", volume: 1.0); // play file with given volume
-  String key = sounds.play("file.mp3", isLoop: true); // play file and repeat forever
-  String key = sounds.play("file.mp3", isLoop: false); // play file and never loop it
-
-  String key = await sounds.preload("file.mp3"); // preload file, and get key for the channel
-  await sounds.preload("file.mp3", key: "abc"); // preload file into channel with id "abc"
-
-  await sounds.pause("abc"); // pause channel with id "abc"
-  bool success = sounds.resume("abc"); // resume playback of channel with id "abc"
-  bool success = sounds.remove("abc"); // delete the channel with id "abc"
-
-
-  String key = sounds.playCollection([ "file1", "file2" ], loopCount: 5);
-
-*/
-
 import 'package:just_audio/just_audio.dart';
 import 'package:flutter/foundation.dart';
 
@@ -49,7 +19,7 @@ class Sounds {
 
   // If no key provided, generate a new key.
   // If no volume provided, use existing volume for the channel.
-  //   If we're creating a new channel, use default volume of 1.0.
+  // If we're creating a new channel, use default volume of 1.0.
   // If no loop provided, do not loop.
   String play(String filename, { 
     String key = "",
